@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Me</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure to link your custom styles if needed -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+      
+
+        .ipad {
+            position: relative;
+            width: 1124px;
+            height: 570px;
+            background-color: #333;
+            border-radius: 36px;
+            margin: 50px auto;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .ipad:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 120px;
+            background-color: #333; /* Assuming this is needed for the pencil effect */
+            border-radius: 10px;
+        }
+
+        .ipad-screen {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .projects {
+            display: flex;
+            display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; /* Ensure the section takes full height */
+        }
+
+        .card {
+            margin: 10px;
+            width: 18rem;
+            height: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 0 0 auto; /* Prevent cards from stretching */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="N.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="content.html">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="ipad">
+        <div class="ipencil"></div>
+        <div class="ipad-screen">
+            <section class="projects">
+                <div class="card">
+                    <img src="project1.JPG" class="card-img-top" alt="Store2Go">
+                    <div class="card-body">
+                        <h5 class="card-title">Store2Go</h5>
+                        <p class="card-text">A convenient e-commerce platform. <a href="https://store2go.netlify.app" target="_blank">Visit Site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./project2.PNG" class="card-img-top" alt="Indian Recipe">
+                    <div class="card-body">
+                        <h5 class="card-title">Indian Recipe</h5>
+                        <p class="card-text">Discover a variety of Indian recipes. <a href="https://indianrecipte.netlify.app" target="_blank">Visit Site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./project3.PNG" class="card-img-top" alt="Travel Advisor">
+                    <div class="card-body">
+                        <h5 class="card-title">Travel Advisor</h5>
+                        <p class="card-text">Plan your perfect trip with ease. <a href="https://nitishrana04.github.io/traveladvisor/" target="_blank">Visit Site</a></p>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Me</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure to link your custom styles if needed -->
+    <style>
+        .ipad {
+  position: relative;
+  width: 1124px;
+  height: 570px;
+  background-color: #333;
+  border-radius: 36px;
+  margin: 50px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+        .ipad:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 120px;
+            
+            border-radius: 10px;
+        }
+
+        .ipad-screen {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .hero p {
+    font-size: 1em;
+    line-height: 1;
+    margin-top: 5px;
+    
+}
+
+        .sticky-notes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-notes img {
+    
+    height: 100%;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="N.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="content.html">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="ipad">
+        <div class="ipencil"></div>
+        <div class="ipad-screen">
+            <header class="hero">
+                <div class="hero-content">
+                    <h1>About Me</h1>
+                    <p>Hello, I'm Nitish Rana, a graduate from Swami Vivekananda Subharti University in Meerut, with a <strong>Bachelor's degree in Computer Applications.</strong>  I am deeply passionate about creating impactful designs rooted in meticulous research and thoughtful implementation.</p>
+                    <p>Every morning, I kickstart my day with a steaming cup of coffee, and by noon, I unwind with a chilled soda. These moments fuel my creativity as I tackle daily design challenges with zeal, envisioning how my designs can shape the world.</p>
+                    <p>I find solace in the smooth melodies of soft jazz music and the indulgence of Maryland cookies, transporting me to a realm where creativity knows no bounds.</p>
+                    <p>As a creator, I specialize in crafting User Interface Designs, Photo-manipulations, Web banners, Graphics, Logos, Branding, and more, all tailored to captivate and engage users. You could say, I'm a Minimal Enthusiast.</p>
+                    <p>Equipped with skills in <strong>HTML/CSS, JavaScript, React, Node.js, and Git,</strong>  along with proficiency in databases like  <strong>Firebase and MongoDB,</strong> I'm currently working on several projects aimed at pushing the boundaries of design and technology.</p>
+                </div>
+            </header>
+            <div class="sticky-notes">
+                <img src="IMG_5921.PNG" alt="Logo">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
